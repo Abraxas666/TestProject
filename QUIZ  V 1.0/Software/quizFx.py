@@ -68,19 +68,39 @@ def print_quiz (quest):                                         # stampa un pdf 
     pdf.output("Test.pdf")                                      # stampa il pdf
 
 def quiz_add():
-    while True:
-        Q = input("Insert the question\n")
-        file = open("questions.txt", "a")
-        file.write(Q+"\n")
-        file.close()
-        for x in range (0,3):
-            A = input(f"Insert the answer{x+1}\n")
+ counter = 1                                                   # richiesta del password per modificare il test
+ password_attempt = "123"                                      # da fare una funzione per nascondere il password con ***
+ print("Please insert password")
+ while counter <= 2:
+    password_attempt= input("\n")
+    counter += 1
+    if password_attempt == "123":
+         print("Welcome")
+                                           
+         while True:
+            Q = input("Insert the question\n")
             file = open("questions.txt", "a")
-            file.write("\t"+ str(x+1) + " " + A +"\n")
+            file.write(Q+"\n")
             file.close()
-        S = input("Insert the solution\n")
-        file = open("questions.txt", "a")
-        file.write(S+ "\n")
-        file.close()
-        if end_test ():
-            break
+            for x in range (0,3):
+                A = input(f"Insert the answer{x+1}\n")
+                file = open("questions.txt", "a")
+                file.write("\t"+ str(x+1) + " " + A +"\n")
+                file.close()
+            S = input("Insert the solution\n")
+            file = open("questions.txt", "a")
+            file.write(S+ "\n")
+            file.close()
+            if end_test ():
+             break
+    else:
+         print("Wrong password! Please try again")
+ if counter == 3:
+     password_attempt= input(":\n")
+     if password_attempt == "123":
+         print("Welcome")
+     else:
+         print("Sorry, access denied!")
+       
+                    
+        
