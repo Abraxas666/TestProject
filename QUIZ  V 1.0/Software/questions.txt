@@ -1,0 +1,40 @@
+How the symbols < > == are called  in python?
+        	1 Comparison Operators
+        	2 Logical Operators
+       	3 Assignment Operators
+ 1
+Which operators are used for the program flow contol?
+        	1 if, ifelse, while
+        	2 for, while
+       	 3 try except 
+1
+What is contained in the parentheses () in the function definition?
+        	1 arguments
+       	 2 parametes
+       	 3 strings
+2
+if the sofware when loaded produce an error and stop automatically, the problem most likely is due to?
+        	1  a syntax error
+        	2  a semantic error
+        	3  a metodology error
+1
+The files were the functions are stored are known as?	
+	1 classes
+        	2 modules
+        	3 librraries
+2
+How avoid human errors when an input is introduced by the user over terminal?
+       	1 Analize the infput with the comaprison operators
+       	2 with ithe software control flow
+       	3 With the Try: Except: Else: Finally: code blocks
+3
+How to print a random numbeer?
+	 1 Use the random library rand.randint() function
+	 2 Use the random library rand.sample() function
+	 3 Use the random library rand.shuffle() function
+1
+How to call a function?
+	1 writing the function name followed by the parenthesys ()
+	2 writing the function name followed by colons :
+	3 writing the function definition folloerd by parenthesys ()
+1
